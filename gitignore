@@ -1,0 +1,290 @@
+# =============================================================================
+# Bitcoin Price Prediction Project
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python bytecode and caches
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.cache/
+
+# -----------------------------------------------------------------------------
+# Virtual environments
+# -----------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------------------------------------------------------
+# Python packaging and build artifacts
+# -----------------------------------------------------------------------------
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# -----------------------------------------------------------------------------
+# Jupyter notebooks
+# Keep the notebooks themselves, ignore only temporary state
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# -----------------------------------------------------------------------------
+# IDE and editor files
+# -----------------------------------------------------------------------------
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# -----------------------------------------------------------------------------
+# Operating-system files
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.Trashes
+.Spotlight-V100
+
+# -----------------------------------------------------------------------------
+# Local environment and secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+config/local.yaml
+config/local.yml
+config/local.json
+config/secrets.yaml
+config/secrets.yml
+secrets/
+*.pem
+*.key
+*.crt
+credentials.json
+
+# -----------------------------------------------------------------------------
+# Logs, temporary files, and crash dumps
+# -----------------------------------------------------------------------------
+logs/
+*.log
+*.log.*
+*.tmp
+*.temp
+*.part
+*.bak
+*.old
+*.orig
+*.rej
+*.pid
+*.pid.lock
+core
+core.*
+crash.log
+
+# -----------------------------------------------------------------------------
+# Raw, interim, and processed datasets
+# Keep directory placeholders only
+# -----------------------------------------------------------------------------
+data/raw/*
+!data/raw/.gitkeep
+
+data/interim/*
+!data/interim/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Predictions and temporary model inputs
+data/predictions/
+data/cache/
+data/tmp/
+data/temp/
+
+# Large dataset formats
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# -----------------------------------------------------------------------------
+# Trained models and experiment artifacts
+# -----------------------------------------------------------------------------
+models/artifacts/*
+!models/artifacts/.gitkeep
+
+models/checkpoints/
+models/tmp/
+models/cache/
+
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.model
+*.cbm
+*.ubj
+
+# -----------------------------------------------------------------------------
+# Optuna and experiment tracking
+# -----------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+optuna/
+mlruns/
+wandb/
+lightning_logs/
+tensorboard/
+runs/
+
+# -----------------------------------------------------------------------------
+# Generated reports
+# Ignore intermediate runs, but keep the frozen final report
+# -----------------------------------------------------------------------------
+reports/**
+!reports/README.md
+!reports/final/
+!reports/final/**
+
+# -----------------------------------------------------------------------------
+# Generated presentation working files
+# Keep final files in docs/presentation, ignore temporary source bundles
+# -----------------------------------------------------------------------------
+presentation_assets/
+presentation_sources/
+source_documents/
+rendered_slides/
+slide_renders/
+pptx_renders/
+presentation_tmp/
+presentation_temp/
+
+# Temporary image-generation and screenshot outputs
+assets/tmp/
+assets/temp/
+screenshots/tmp/
+figures/tmp/
+
+# -----------------------------------------------------------------------------
+# Document conversion and office lock files
+# -----------------------------------------------------------------------------
+~$*.docx
+~$*.pptx
+~$*.xlsx
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# -----------------------------------------------------------------------------
+# Test outputs and synthetic fixtures
+# -----------------------------------------------------------------------------
+test-results/
+test_output/
+test_outputs/
+synthetic_reports/
+synthetic_data/
+tmp_tests/
+.pytest_tmp/
+
+# -----------------------------------------------------------------------------
+# Local command outputs
+# -----------------------------------------------------------------------------
+nohup.out
+stdout.txt
+stderr.txt
+python-version-local.txt
+requirements-local.txt
+
+# -----------------------------------------------------------------------------
+# DVC
+# Keep DVC metadata tracked, ignore its cache and temporary files
+# -----------------------------------------------------------------------------
+.dvc/cache/
+.dvc/tmp/
+.dvc/config.local
+
+# -----------------------------------------------------------------------------
+# Miscellaneous archives and backups
+# -----------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# -----------------------------------------------------------------------------
+# Explicitly keep important project artifacts
+# -----------------------------------------------------------------------------
+!README.md
+!README_EN.md
+!requirements.txt
+!requirements-lock.txt
+!python-version.txt
+!pyproject.toml
+!setup.cfg
+!tox.ini
+!LICENSE
+!CITATION.cff
+!CHANGELOG.md
+!docs/
+!docs/**
+!notebooks/
+!notebooks/**
+!src/
+!src/**
+!scripts/
+!scripts/**
+!tests/
+!tests/**
+!config/default.yaml
+!config/development.yaml
+!config/final_runs.yaml
